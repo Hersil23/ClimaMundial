@@ -24,10 +24,10 @@ function App() {
       const data = await getCurrentLocationWeather()
       setWeatherData(data)
     } catch (err) {
-      // Si falla la geolocalización, usar Buenos Aires por defecto
+      // Si falla la geolocalización, usar Caracas DC por defecto
       console.error('Error al obtener ubicación:', err)
-      setError('No se pudo obtener tu ubicación. Mostrando Buenos Aires.')
-      handleSearch('Buenos Aires')
+      setError('No se pudo obtener tu ubicación. Mostrando Caracas DC.')
+      handleSearch('Caracas DC.')
     } finally {
       setLoading(false)
     }
@@ -36,8 +36,8 @@ function App() {
   // Manejar cuando el usuario NIEGA la ubicación
   const handleDenyLocation = () => {
     setShowLocationModal(false)
-    // Cargar Buenos Aires por defecto
-    handleSearch('Buenos Aires')
+    // Cargar Caracas DC por defecto
+    handleSearch('Caracas DC')
   }
 
   const handleSearch = async (cityName) => {
@@ -55,7 +55,7 @@ function App() {
     }
   }
 
-  const popularCities = ['Madrid', 'Barcelona', 'Buenos Aires', 'México DF', 'Lima']
+  const popularCities = ['Madrid', 'Barcelona', 'Buenos Aires', 'México DF', 'Caracas', 'Lima']
 
   return (
     <div className="min-h-screen transition-colors duration-300 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-gray-900 dark:to-gray-800">

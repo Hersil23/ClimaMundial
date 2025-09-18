@@ -30,7 +30,7 @@ const SearchBar = ({ onSearch, theme }) => {
             type="text"
             value={city}
             onChange={handleChange}
-            placeholder="Buenos Aires"
+            placeholder="Escribe aquí el nombre de una ciudad..."
             className={`
               w-full px-6 py-4 pr-32 rounded-full text-lg
               transition-all duration-300
