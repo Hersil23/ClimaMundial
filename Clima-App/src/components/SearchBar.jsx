@@ -8,7 +8,7 @@ const SearchBar = ({ onSearch, theme }) => {
     e.preventDefault();
     
     if (city.trim() === '') {
-      setError('Por favor ingresa el nombre de una ciudad');
+      setError('Por favor ingresa el nombre de una ciudad.');
       return;
     }
     
@@ -30,7 +30,7 @@ const SearchBar = ({ onSearch, theme }) => {
             type="text"
             value={city}
             onChange={handleChange}
-            placeholder="Escribe aquí el nombre de una ciudad..."
+            placeholder="Escribe aqui una ciudad..."
             className={`
               w-full px-6 py-4 pr-32 rounded-full text-lg
               transition-all duration-300
