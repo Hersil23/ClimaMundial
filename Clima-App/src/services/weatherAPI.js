@@ -1,4 +1,4 @@
-// weatherAPI.js - Servicio para consumir la API de OpenWeatherMap
+// para consumir la API de OpenWeatherMap
 
 const API_KEY = '619a3754b16a069926bf8368c3bb21d3'; // Tu API key
 const BASE_URL = 'https://api.openweathermap.org/data/2.5';
