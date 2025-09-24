@@ -1,2 +1,2 @@
 # ClimaMundial
-Proyecto de react de cnsum del la api del tiempo en el mundo
+Proyecto de react de consumo del la api del clima en el mundo
